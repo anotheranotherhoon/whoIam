@@ -26,9 +26,9 @@ GIF Images
 
 ## 기술 스택
 
-| React | styled-component |  Redux Toolkit   |  React-Router   | Firebase|
+| React | styled-components |  Redux Toolkit   |  React-Router   | Firebase|
 | :--------: | :--------: | :------: | :-----: |:------: |
-|   ![reactjs]    |   ![styledcomponent]    | ![redux] | ![reactrouter] |![firebase]|
+|   ![reactjs]    |   ![styledcomponents]    | ![redux] | ![reactrouter] |![firebase]|
 
 
 
@@ -63,7 +63,7 @@ MIT &copy; [NoHack](mailto:changhoon1030@gmail.com)
 <!-- Stack Icon Refernces -->
 
 [reactjs]: /images/stack/reactjs.png
-[styledcomponent]: /images/stack/styledcomponents.png
+[styledcomponents]: /images/stack/styledcomponents.png
 [redux]: /images/stack/redux.png
 [reactrouter]: /images/stack/reactrouter.png
 [firebase]: /images/stack/firebase.png
