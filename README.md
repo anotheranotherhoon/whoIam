@@ -58,7 +58,7 @@ GIF Images
 
 ## 라이센스
 
-MIT &copy; [NoHack](changhoon1030@gmail.com)
+MIT &copy; [NoHack](mailto:changhoon1030@gmail.com)
 
 <!-- Stack Icon Refernces -->
 
