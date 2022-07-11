@@ -16,5 +16,12 @@ export const initialState = {
                 description: "미술팀",
                 learned: "hello",
             }
+        ],
+        song : [
+            {
+                title : "",
+                artist : "",
+                singable : true,
+            }
         ]
     }

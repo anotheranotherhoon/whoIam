@@ -1,15 +1,18 @@
-import { useSelector } from "react-redux";
-
-
+import { Routes, Route } from "react-router-dom";
+import Nav from './Nav';
+import Home from './Components/Home'
+import Profile from './Pages/Profile'
+import Volunteer from './Pages/Volunteer';
 
 function App() {
-  const state = useSelector(state => state.expReducer)
-  const handleClick = () => {
-    console.log(state)
-  }
   return (
     <div className="App">
-      <button onClick={handleClick}>클릭</button>
+      <Nav />
+      <Routes>
+        <Route path='/' element={<Home />}/>
+        <Route path='/profile' element={<Profile/>}/>
+        <Route path='/volunteer' element={<Volunteer/>}/>
+      </Routes>
     </div>
   );
 }
