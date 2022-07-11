@@ -1,10 +1,15 @@
-import { fireStore } from "./Firebase";
+import { useSelector } from "react-redux";
 
-console.log(fireStore)
+
+
 function App() {
+  const state = useSelector(state => state.expReducer)
+  const handleClick = () => {
+    console.log(state)
+  }
   return (
     <div className="App">
-      
+      <button onClick={handleClick}>클릭</button>
     </div>
   );
 }

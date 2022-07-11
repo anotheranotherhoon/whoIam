@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
+import { getFirestore, doc, setDoc, addDoc } from "firebase/firestore";
 
 
 const firebaseConfig = {
@@ -10,8 +10,19 @@ const firebaseConfig = {
     messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
     appId: process.env.REACT_APP_APP_ID
 };
+
 const firebase = initializeApp(firebaseConfig);
 
 const fireStore = getFirestore(firebase);
 
-export { fireStore };
+const initData = async (data) => {
+    data.map(async(el,idx) => {
+        // console.log(el, idx)
+        const dataRef = doc(fireStore, "myExp");
+        console.log(dataRef)
+        await addDoc(dataRef,{...el, createdAt: Date.now()})
+    });
+};
+
+
+export { fireStore, initData};
